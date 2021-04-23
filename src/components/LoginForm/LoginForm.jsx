@@ -11,11 +11,14 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
     const [validateMessage, setValidateMessage] = useState('');
     const { setUser } = useContext(StoreContext);
 
+
+
     const handleOnChangeLogin = (e) => setLogin(e.target.value);
     const handleOnChangePassword = (e) => setPassword(e.target.value);
     const handleOnCloseModal = (e) => {
         e.preventDefault();
         handleOnClose();
+        clearForm();
     };
 
     const clearForm = () => {
