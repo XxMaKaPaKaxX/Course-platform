@@ -3,6 +3,7 @@ import React from 'react';
 import './Course.scss';
 
 const Course = ({ authors, id, img, price, title }) => {
+    console.log(authors, id)
     const allAuthors = authors.join(', ')
 
     return (

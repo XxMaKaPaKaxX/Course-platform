@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../../../store/StoreProvider.jsx';
-import Course from './subcomponents/Course';
+import Course from '../../Course/Course';
 
 
 import './Courses.scss';
@@ -13,7 +13,7 @@ const Courses = () => {
 
     return (
         <section className="courses">
-            <h2 className="courses__title">t</h2>
+            <h2 className="courses__title">Wszystkie dostępne kursy</h2>
             <ul className="courses__list">
                 {coursesElements}
             </ul>
