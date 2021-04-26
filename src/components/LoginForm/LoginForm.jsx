@@ -11,8 +11,6 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
     const [validateMessage, setValidateMessage] = useState('');
     const { setUser } = useContext(StoreContext);
 
-
-
     const handleOnChangeLogin = (e) => setLogin(e.target.value);
     const handleOnChangePassword = (e) => setPassword(e.target.value);
     const handleOnCloseModal = (e) => {
@@ -25,7 +23,8 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
         setLogin('');
         setPassword('');
         setValidateMessage('');
-    }
+    };
+
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch(`${config.baseUrl}/users`, {
@@ -47,9 +46,8 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
             handleOnClose();
         } else {
             setValidateMessage(data.message)
-        }
-
-    }
+        };
+    };
 
     const ValidateMessageComponent = validateMessage.length
         ? <p className="login-form__validate-message">{validateMessage}</p>

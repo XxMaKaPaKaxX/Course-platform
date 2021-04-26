@@ -9,7 +9,7 @@ const UserCourses = () => {
     const { user, courses } = useContext(StoreContext);
     const userCourses = courses
         .filter(course => user.courses.includes(course.id))
-        .map(course => <Course key={course.id} {...course} />);
+        .map(course => <Course key={course.id} {...course} isUserContext={true} />);
 
     return (
         <section className="user-courses">
