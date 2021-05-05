@@ -29,7 +29,7 @@ const CourseDetails = (props) => {
                 console.log(response.status);
             }
         } catch (err) {
-            console.log(err)
+            console.log(err);
         }
     }
 

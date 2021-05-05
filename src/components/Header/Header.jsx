@@ -1,11 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { StoreContext } from '../../store/StoreProvider';
 import LoginForm from '../LoginForm/LoginForm';
-/* import Modal from '../Modal/Modal'; */
 import './Header.scss';
-
-
-
 
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

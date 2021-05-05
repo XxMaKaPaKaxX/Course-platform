@@ -36,7 +36,6 @@ const CoursePopup = ({
             price: Number(formPrice),
             title: formTitle
         };
-        console.log(courseObj)
         if (isEditMode) {
             const response = await fetch(url, {
                 method: "PUT",

@@ -6,7 +6,6 @@ import Content from './components/Content/Content';
 import StoreProvider from './store/StoreProvider';
 import './App.scss';
 
-
 const App = () => {
   return (
     <StoreProvider>

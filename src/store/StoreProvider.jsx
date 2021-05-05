@@ -12,14 +12,11 @@ const StoreProvider = ({ children }) => {
         const response = await fetch(`${config.baseUrl}/courses`);
         const data = await response.json();
         setCourses(data.courses)
-    }
+    };
 
     useEffect(() => {
-        fetchData()
-        /* .then(() => console.log('dane dot. kursów załadowane'))
-        .catch(err => console.log('dane dot. kursów nie zostały pomyślnie załadowane', err)) */
-    }, [])
-
+        fetchData();
+    }, []);
 
     return (
         <StoreContext.Provider value={{

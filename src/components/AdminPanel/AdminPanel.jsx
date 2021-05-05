@@ -3,7 +3,6 @@ import { StoreContext } from '../../store/StoreProvider';
 import CourseDetails from './subcomponents/CourseDetails';
 import CoursePopup from './subcomponents/CoursePopup';
 
-
 const AdminPanel = () => {
     const [isOpenPopup, setIsOpenPopup] = useState(false);
     const { courses } = useContext(StoreContext);

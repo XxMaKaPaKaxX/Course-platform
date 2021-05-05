@@ -31,9 +31,6 @@ const Course = ({ authors, id, img, price, title, isUserContext }) => {
                 setUser(data.user);
                 history.push('/my-courses');
             }
-
-            console.log(data, response.status)
-
         } catch (err) {
             console.log(err)
         }
